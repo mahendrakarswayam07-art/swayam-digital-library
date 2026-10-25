@@ -1,0 +1,93 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swayam | Data Science Digital Library</title>
+<link rel="stylesheet" href="script.css">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#090909;color:#f5f5f5}
+.login-wrap{min-height:100vh;display:grid;grid-template-columns:1fr 1fr}
+.login-left{padding:clamp(25px,5vw,70px);display:flex;flex-direction:column;justify-content:center;background:radial-gradient(ellipse at top left,#351116,transparent 65%),#101010;border-right:1px solid #292929}
+.brand{display:flex;align-items:center;gap:12px;font-weight:bold;font-size:20px}
+.brand img{width:52px;height:52px;object-fit:contain}
+.brand span{color:#ff414d}
+.eyebrow{margin-top:42px;color:#ff414d;font-size:12px;font-weight:bold;letter-spacing:2px}
+.login-left h1{font-size:clamp(36px,5vw,56px);line-height:1.12;margin:18px 0}
+.login-left h1 span{color:#ff414d}
+.intro{color:#aaa;line-height:1.8;max-width:480px}
+.features{display:grid;gap:14px;margin-top:25px;color:#ddd;font-size:14px}
+.features div:before{content:"✓";color:#ff414d;font-weight:bold;margin-right:10px}
+.login-right{display:flex;align-items:center;justify-content:center;padding:25px}
+.login-card{width:100%;max-width:430px;padding:35px;background:#151515;border:1px solid #292929;border-radius:20px;box-shadow:0 20px 70px #0006}
+.profile-circle{width:115px;height:115px;margin:0 auto 20px;border-radius:50%;overflow:hidden;border:3px solid #ff414d;background:#242424;display:flex;align-items:center;justify-content:center}
+.profile-circle img{width:100%;height:100%;object-fit:cover;display:block}
+.login-card h2{text-align:center;margin:12px 0;font-size:25px}
+.subtitle{text-align:center;color:#aaa;font-size:14px;line-height:1.7}
+.details{padding:17px;background:#101010;border:1px solid #292929;border-radius:12px;margin:25px 0}
+.details div{display:flex;justify-content:space-between;gap:12px;margin:12px 0;font-size:13px}
+.details span{color:#aaa}
+.details strong{text-align:right}
+.enter-btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:14px;background:#ff414d;border-radius:9px;text-decoration:none;color:white;font-weight:bold}
+.enter-btn:hover{background:#e52f3c}
+.footer{text-align:center;color:#999;font-size:12px;line-height:1.8;margin-top:22px}
+@media(max-width:800px){.login-wrap{grid-template-columns:1fr}.login-left{padding:30px 25px}.eyebrow{margin-top:25px}.login-left h1{font-size:38px}.login-right{padding:20px 15px 35px}.login-card{padding:25px}}
+</style>
+</head>
+<body>
+<div class="login-wrap">
+<section class="login-left">
+    <div class="brand">
+        <img class="logo-img" alt="Library Logo" style="display:none">
+        <div>SWAYAM <span>LIBRARY</span></div>
+    </div>
+
+    <div class="eyebrow">MOHAN BABU UNIVERSITY</div>
+    <h1>Data Science<br><span>Digital Library.</span></h1>
+    <p class="intro">Your smart learning space for Data Science, Python, Machine Learning, Statistics, coding practice and study materials.</p>
+
+    <div class="features">
+        <div>Data Science Study Modules</div>
+        <div>PDF Learning Resources</div>
+        <div>Python Coding Lab</div>
+        <div>Machine Learning Practice</div>
+        <div>Programming Resources</div>
+    </div>
+</section>
+
+<section class="login-right">
+    <div class="login-card">
+        <div class="profile-circle">
+            <img class="photo-img" alt="Swayam Profile Picture" style="display:none">
+        </div>
+
+        <h2>Welcome, Swayam!</h2>
+        <p class="subtitle">Access your study modules, PDFs and coding tools.</p>
+
+        <div class="details">
+            <div><span>Student</span><strong>Swayam Kumar</strong></div>
+            <div><span>Department</span><strong>Data Science</strong></div>
+            <div><span>University</span><strong>Mohan Babu University</strong></div>
+            <div><span>Academic Year</span><strong>2026–27</strong></div>
+        </div>
+
+        <a href="dashboard.html" class="enter-btn">
+            Enter Dashboard <span>→</span>
+        </a>
+
+        <div class="footer">
+            Mohan Babu University<br>
+            Data Science Department
+        </div>
+    </div>
+</section>
+</div>
+<script>
+function useFirst(files,sel){(function t(n){if(n>=files.length)return;var p=new Image();p.onload=function(){document.querySelectorAll(sel).forEach(function(e){e.src=files[n];e.style.display="block"})};p.onerror=function(){t(n+1)};p.src=files[n]})(0)}
+useFirst(["images/image.jpg","images/image.jpeg","images/image.png","images/image.webp","images/swayam.jpg","images/swayam.png","images/photo.jpg","images/photo.png"],".photo-img");
+useFirst(["images/mbu-logo.png","images/mbu-logo.jpg","images/mbu.png","images/mbu.jpg","images/logo.png","images/logo.jpg","images/logo.jpeg","images/logo.webp","images/swayam-logo.png"],".logo-img");
+</script>
+</body>
+</html>

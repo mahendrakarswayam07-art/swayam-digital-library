@@ -1,0 +1,15 @@
+SWAYAM DIGITAL LIBRARY - what to edit
+
+1. LinkedIn link : open script.js, change LINKEDIN_URL (top of file).
+2. Resume        : already added (resume/resume.pdf). To replace it, save the new PDF with the same name and tell Claude to refresh images/resume-preview.jpg
+3. Assignments   : PDFs are in the "assignments" folder (module1-3 added). For module4 and module5: add module4.pdf / module5.pdf there,
+                   then add 4 and 5 to ASSIGNMENTS_READY at the top of script.js
+   (class-work photos, if any: assignment1.jpg, assignment2.jpg ... in the same folder)
+4. Flip books    : made from the PDFs and stored in the "pages" folder (already included).
+   If you ever change a module PDF, tell Claude to rebuild its flip book pages.
+
+TO UPDATE THE LIVE WEBSITE (VS Code terminal, inside your project folder):
+   git add -A
+   git commit -m "Update website"
+   git push
+Then wait 1-2 minutes and press Ctrl+F5 on your link.
